@@ -1,0 +1,115 @@
+{
+  "artists": [
+    {
+      "nom": "Nagasaki",
+      "prenom": "Tetsuo",
+      "alias": "Goku",
+      "role": ["chant"],
+      "presentation": "Je suis un vrai fan de tartiflette, je pourrais en manger 100!",
+      "image": "assets/Goku.jpg"
+    },
+    {
+      "nom": "Botox",
+      "prenom": "Samantha",
+      "alias": "Barbie",
+      "role": ["chant", "basse"],
+      "presentation": "J'adore les animaux, enfin, seulement ceux qui sont mignons, coeur avec les mains mes petits Otaku4Kers",
+      "image": "assets/Barbie.jpg"
+    },
+    {
+      "nom": "Turing",
+      "prenom": "Isaac",
+      "alias": "Stormtrooper",
+      "role": ["guitare"],
+      "presentation": "Je n'ai rien à dire.",
+      "image": "assets/Stormtrooper.jpg"
+    },
+    {
+      "nom": "Adèle",
+      "prenom": "Curie",
+      "alias": "Esmeralda",
+      "role": ["batterie"],
+      "presentation": "La batterie, c'est mon amour! J'en fait depuis que j'ai 6 ans!",
+      "image": "assets/Esmeralda.jpg"
+    }
+  ],
+  "activities": [
+    {
+      "texte": "C'est l'anniversaire d'Adèle!",
+      "image": "assets/Anniversaire.jpg",
+      "date": "2019-12-29 17:38:41"
+    },
+    {
+      "texte": "Les collégiens de Victor Hugo sont des oufs!",
+      "image": "assets/Boum.jpg",
+      "date": "2019-12-29 17:38:41"
+    },
+    {
+      "texte": "On répète dans le garage d'Isaac!",
+      "image": "assets/Garage.jpg",
+      "date": "2019-12-29 17:38:41"
+    }
+  ],
+  "fans": [
+    {
+      "nom": "Durand",
+      "prenom": "Jerôme",
+      "ville": "Marseille",
+      "pays": "France"
+    },
+    {
+      "nom": "Dupont",
+      "prenom": "Yannick",
+      "ville": "Nice",
+      "pays": "France"
+    },
+    {
+      "nom": "Hawkins",
+      "prenom": "John",
+      "ville": "New-York",
+      "pays": "Etats-Unis"
+    },
+    {
+      "nom": "Shinozaki",
+      "prenom": "Ai",
+      "ville": "Tokyo",
+      "pays": "Japon"
+    },
+    {
+      "nom": "Abdallah",
+      "prenom": "Kassim",
+      "ville": "Alger",
+      "pays": "Algérie"
+    },
+    {
+      "nom": "Dong",
+      "prenom": "Jia Wen",
+      "ville": "Shanghai",
+      "pays": "Chine"
+    },
+    {
+      "nom": "Da Silva",
+      "prenom": "Joao",
+      "ville": "Brasilia",
+      "pays": "Brésil"
+    },
+    {
+      "nom": "Klaus",
+      "prenom": "Michael",
+      "ville": "Dortmund",
+      "pays": "Allemagne"
+    },
+    {
+      "nom": "Svitolina",
+      "prenom": "Anna",
+      "ville": "Moscou",
+      "pays": "Russie"
+    },
+    {
+      "nom": "Armstrong",
+      "prenom": "Jessica",
+      "ville": "Los Angeles",
+      "pays": "Etats-Unis"
+    }
+  ]
+}
