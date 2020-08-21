@@ -1,5 +1,4 @@
 export class Fan {
 
-    constructor(private nom: string, private prenom: string, private ville: string, private pays: string) {
-    }
+    constructor(public nom: string, public prenom: string, public ville: string, public pays: string) { }
 }
