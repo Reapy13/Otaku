@@ -1,5 +1,5 @@
 export class Artist {
 
-    constructor(private nom: string, private prenom: string, private alias: string, private role: Array<string>,
-                private presentation: string, private image: string) { }
+    constructor(public nom: string, public prenom: string, public alias: string, public role: Array<string>,
+                public presentation: string, public image: string) { }
 }

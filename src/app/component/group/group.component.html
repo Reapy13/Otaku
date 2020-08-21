@@ -1,1 +1,5 @@
-<p>group works!</p>
+<div>Présentation du groupe</div>
+
+<div *ngFor="let artist of groupService.artistList">
+    <a>{{artist.alias}}</a>
+</div>
