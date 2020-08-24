@@ -1,3 +1,16 @@
+input {
+    margin-bottom: 1%;
+    margin-right: 1%;
+}
+
+input:nth-child(1) {
+    margin-top: 1%;
+}
+
 th:hover {
     cursor: pointer;
+}
+
+.spaced {
+    margin: 1%;
 }

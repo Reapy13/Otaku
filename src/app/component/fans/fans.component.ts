@@ -20,6 +20,9 @@ export class FansComponent implements OnInit {
 
     private column: string = "";
 
+    public fanAdding: boolean = false;
+    public fanTmp: Fan = new Fan('','','','');
+
     constructor(public fanService: FanService) { }
 
     ngOnInit(): void { }
@@ -81,5 +84,10 @@ export class FansComponent implements OnInit {
             && fan.prenom.toLowerCase().includes(this.firstNameFilter.toLowerCase())
             && fan.ville.toLowerCase().includes(this.cityFilter.toLowerCase())
             && fan.pays.toLowerCase().includes(this.countryFilter.toLowerCase());
+    }
+
+    addFan() {
+        this.fanService.addFan(this.fanTmp);
+        this.fanTmp = new Fan('','','', '');
     }
 }

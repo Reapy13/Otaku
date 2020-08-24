@@ -1,27 +1,40 @@
-<table class="table table-striped">
-    <thead>
-        <tr>
-            <th (click)="filterOpen = !filterOpen">Filter...</th>
-            <th (click)="sortByLastName()">Nom</th>
-            <th (click)="sortByFirstName()">Prenom</th>
-            <th (click)="sortByCity()">Ville</th>
-            <th (click)="sortByCountry()">Pays</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr *ngIf="filterOpen">
-            <td></td>
-            <td><input type="text" class="form-control" [(ngModel)]="lastNameFilter"/></td>
-            <td><input type="text" class="form-control" [(ngModel)]="firstNameFilter"/></td>
-            <td><input type="text" class="form-control" [(ngModel)]="cityFilter"/></td>
-            <td><input type="text" class="form-control" [(ngModel)]="countryFilter"/></td>
-        </tr>
-        <tr *ngFor="let fan of fanService.fanList">
-            <td *ngIf="filter(fan)"></td>
-            <td *ngIf="filter(fan)">{{fan.nom}}</td>
-            <td *ngIf="filter(fan)">{{fan.prenom}}</td>
-            <td *ngIf="filter(fan)">{{fan.ville}}</td>
-            <td *ngIf="filter(fan)">{{fan.pays}}</td>
-        </tr>
-    </tbody>
-</table>
+<div class="spaced">
+    <button class="btn btn-success" (click)="fanAdding = !fanAdding">+</button>
+    <div class="form-group" *ngIf="fanAdding">
+        <input type="text" placeholder="Nom" [(ngModel)]="fanTmp.nom"/>
+        <input type="text" placeholder="Prenom" [(ngModel)]="fanTmp.prenom"/>
+        <input type="text" placeholder="Ville" [(ngModel)]="fanTmp.ville"/>
+        <input type="text" placeholder="Pays" [(ngModel)]="fanTmp.pays"/>
+        <button class="btn btn-primary" (click)="addFan()">Ajouter Fan</button>
+    </div>
+</div>
+
+<div class="spaced">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th (click)="filterOpen = !filterOpen">Filter...</th>
+                <th (click)="sortByLastName()">Nom</th>
+                <th (click)="sortByFirstName()">Prenom</th>
+                <th (click)="sortByCity()">Ville</th>
+                <th (click)="sortByCountry()">Pays</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngIf="filterOpen">
+                <td></td>
+                <td><input type="text" class="form-control" [(ngModel)]="lastNameFilter"/></td>
+                <td><input type="text" class="form-control" [(ngModel)]="firstNameFilter"/></td>
+                <td><input type="text" class="form-control" [(ngModel)]="cityFilter"/></td>
+                <td><input type="text" class="form-control" [(ngModel)]="countryFilter"/></td>
+            </tr>
+            <tr *ngFor="let fan of fanService.fanList">
+                <td *ngIf="filter(fan)"></td>
+                <td *ngIf="filter(fan)">{{fan.nom}}</td>
+                <td *ngIf="filter(fan)">{{fan.prenom}}</td>
+                <td *ngIf="filter(fan)">{{fan.ville}}</td>
+                <td *ngIf="filter(fan)">{{fan.pays}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

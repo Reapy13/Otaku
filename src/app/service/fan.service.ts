@@ -17,4 +17,10 @@ export class FanService {
         this.httpClient.get<Array<Fan>>('http://localhost:3000/fans')
             .subscribe(resp => this.fanList = resp, error => console.log(error));
     }
+
+    addFan(fan: Fan) {
+        console.log(fan);
+        this.httpClient.post<Fan>('http://localhost:3000/fans', fan)
+            .subscribe(() => this.load(), error => console.log(error));
+    }
 }
