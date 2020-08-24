@@ -1,1 +1,20 @@
-<p>fans works!</p>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Nom</th>
+            <th>Prenom</th>
+            <th>Ville</th>
+            <th>Pays</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let fan of fanService.fanList">
+            <td>{{fanService.fanList.indexOf(fan)}}</td>
+            <td>{{fan.nom}}</td>
+            <td>{{fan.prenom}}</td>
+            <td>{{fan.ville}}</td>
+            <td>{{fan.pays}}</td>
+        </tr>
+    </tbody>
+</table>
