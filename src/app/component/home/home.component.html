@@ -1,5 +1,5 @@
-<div *ngFor="let activity of activityService.activityList">
-    <h2>{{activity.date}}</h2>
-    <img src="{{activity.image}}">
-    <p>{{activity.texte}}</p>
+<div class="home" *ngFor="let activity of activityService.activityList">
+    <h2>{{activity.texte}}</h2>
+    <img class="group-img" src="{{activity.image}}">
+    <p>Posté le : {{activity.date}}</p>
 </div>
