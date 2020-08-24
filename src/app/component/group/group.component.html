@@ -1,5 +1,6 @@
-<div>Présentation du groupe</div>
+<h1>Présentation du groupe</h1>
 
-<div *ngFor="let artist of groupService.artistList">
-    <a>{{artist.alias}}</a>
+<div class="artist" *ngFor="let artist of groupService.artistList">
+    <h2><a>{{artist.alias}}</a></h2>
+    <img src="{{artist.image}}"/>
 </div>
