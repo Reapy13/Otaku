@@ -1,20 +1,27 @@
 <table class="table table-striped">
     <thead>
         <tr>
-            <th>#</th>
-            <th>Nom</th>
-            <th>Prenom</th>
-            <th>Ville</th>
-            <th>Pays</th>
+            <th (click)="filterOpen = !filterOpen">Filter...</th>
+            <th (click)="sortByLastName()">Nom</th>
+            <th (click)="sortByFirstName()">Prenom</th>
+            <th (click)="sortByCity()">Ville</th>
+            <th (click)="sortByCountry()">Pays</th>
         </tr>
     </thead>
     <tbody>
+        <tr *ngIf="filterOpen">
+            <td></td>
+            <td><input type="text" class="form-control" [(ngModel)]="lastNameFilter"/></td>
+            <td><input type="text" class="form-control" [(ngModel)]="firstNameFilter"/></td>
+            <td><input type="text" class="form-control" [(ngModel)]="cityFilter"/></td>
+            <td><input type="text" class="form-control" [(ngModel)]="countryFilter"/></td>
+        </tr>
         <tr *ngFor="let fan of fanService.fanList">
-            <td>{{fanService.fanList.indexOf(fan)}}</td>
-            <td>{{fan.nom}}</td>
-            <td>{{fan.prenom}}</td>
-            <td>{{fan.ville}}</td>
-            <td>{{fan.pays}}</td>
+            <td *ngIf="filter(fan)"></td>
+            <td *ngIf="filter(fan)">{{fan.nom}}</td>
+            <td *ngIf="filter(fan)">{{fan.prenom}}</td>
+            <td *ngIf="filter(fan)">{{fan.ville}}</td>
+            <td *ngIf="filter(fan)">{{fan.pays}}</td>
         </tr>
     </tbody>
 </table>

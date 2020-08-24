@@ -8,6 +8,7 @@ import {HttpClientModule} from '@angular/common/http';
 import { HeaderComponent } from './component/header/header.component';
 import { GroupComponent } from './component/group/group.component';
 import { FansComponent } from './component/fans/fans.component';
+import {FormsModule} from '@angular/forms';
 
 const routes = [
     {
@@ -36,7 +37,8 @@ const routes = [
     imports: [
         BrowserModule,
         HttpClientModule,
-        RouterModule.forRoot(routes)
+        RouterModule.forRoot(routes),
+        FormsModule
     ],
   providers: [],
   bootstrap: [AppComponent]
