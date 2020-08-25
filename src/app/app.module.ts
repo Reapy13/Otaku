@@ -9,6 +9,7 @@ import { HeaderComponent } from './component/header/header.component';
 import { GroupComponent } from './component/group/group.component';
 import { FansComponent } from './component/fans/fans.component';
 import {FormsModule} from '@angular/forms';
+import { GroupDetailComponent } from './component/group-detail/group-detail.component';
 
 const routes = [
     {
@@ -18,6 +19,10 @@ const routes = [
     {
         'path': 'group',
         'component': GroupComponent
+    },
+    {
+        'path': 'group/:name',
+        'component': GroupDetailComponent
     },
     {
         'path': 'fans',
@@ -32,7 +37,8 @@ const routes = [
     HomeComponent,
     HeaderComponent,
     GroupComponent,
-    FansComponent
+    FansComponent,
+    GroupDetailComponent
   ],
     imports: [
         BrowserModule,

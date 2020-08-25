@@ -1,0 +1,14 @@
+.cell {
+    margin: 2% 25%;
+    border: solid 1px black;
+    display: grid;
+    justify-items: center;
+}
+
+img {
+    width: 25%;
+}
+
+h1 {
+    text-align: center;
+}

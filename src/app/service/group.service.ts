@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import {Activity} from '../model/Activity';
 import {HttpClient} from '@angular/common/http';
 import {Artist} from '../model/Artist';
 
@@ -17,5 +16,9 @@ export class GroupService {
     load() {
         this.httpClient.get<Array<Artist>>('http://localhost:3000/artists')
             .subscribe(resp => this.artistList = resp, error => console.log(error));
+    }
+
+    public getByAlias(alias: string): Artist {
+        return this.artistList.filter(artist => artist.alias === alias)[0];
     }
 }

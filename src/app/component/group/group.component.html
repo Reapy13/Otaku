@@ -1,6 +1,6 @@
 <h1>Présentation du groupe</h1>
 
 <div class="artist" *ngFor="let artist of groupService.artistList">
-    <h2><a>{{artist.alias}}</a></h2>
+    <h2><a [routerLink]="['/group/' + artist.alias]">{{artist.alias}}</a></h2>
     <img src="{{artist.image}}"/>
 </div>

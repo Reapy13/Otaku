@@ -7,7 +7,7 @@ h2 {
 }
 
 .artist {
-    width: 50%;
+    width: auto;
     margin: 2% 25%;
     border: solid black 1px;
     border-radius: 4px;
