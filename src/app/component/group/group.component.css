@@ -1,28 +1,24 @@
-h1 {
+h1, h2 {
     text-align: center;
 }
 
-h2 {
-    text-align: center;
+img {
+    padding: 2%;
+    width: 50%;
 }
 
 .artist {
-    width: auto;
-    margin: 2%;
     display: grid;
     justify-items: center;
+    margin: 2%;
+    width: auto;
 }
 
 .content {
     background-color: lightgrey;
-    display: flex;
     border: solid 1px black;
     border-radius: 8px;
-    margin: 1% 2%;
+    display: flex;
     justify-items: center;
-}
-
-img {
-    width: 50%;
-    padding: 2%;
+    margin: 1% 2%;
 }

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {ActivityService} from '../../service/activity.service';
+import { ActivityService } from '../../service/activity.service';
 
 @Component({
     selector: 'app-home',
@@ -11,5 +11,4 @@ export class HomeComponent implements OnInit {
     constructor(public activityService: ActivityService) { }
 
     ngOnInit(): void { }
-
 }

@@ -1,3 +1,4 @@
+<!-- Adding Fan f -->
 <div class="spaced">
     <button class="btn" [ngClass]="{'btn-success': formBtn === '+', 'btn-danger': formBtn === '-'}" (click)="openForm()">{{formBtn}}</button>
     <div class="form-group" *ngIf="fanAdding">
@@ -9,6 +10,7 @@
     </div>
 </div>
 
+<!-- Fan table -->
 <div class="spaced">
     <table class="table table-striped">
         <thead>

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {ActivatedRoute, Router} from '@angular/router';
-import {GroupService} from '../../service/group.service';
-import {Artist} from '../../model/Artist';
+import { ActivatedRoute, Router } from '@angular/router';
+import { GroupService } from '../../service/group.service';
+import { Artist } from '../../model/Artist';
 
 @Component({
     selector: 'app-group-detail',
@@ -14,11 +14,10 @@ export class GroupDetailComponent implements OnInit {
 
     constructor(private router: Router, private route: ActivatedRoute, private groupService: GroupService) { }
 
+    // Gets the good artist by the name in params
     ngOnInit(): void {
         this.route.params.subscribe((params) => {
             this.artist = this.groupService.getByAlias(params['name']);
         });
     }
-
-
 }
