@@ -1,5 +1,5 @@
 <div class="spaced">
-    <button class="btn btn-success" (click)="fanAdding = !fanAdding">+</button>
+    <button class="btn" [ngClass]="{'btn-success': formBtn === '+', 'btn-danger': formBtn === '-'}" (click)="openForm()">{{formBtn}}</button>
     <div class="form-group" *ngIf="fanAdding">
         <input type="text" placeholder="Nom" [(ngModel)]="fanTmp.nom"/>
         <input type="text" placeholder="Prenom" [(ngModel)]="fanTmp.prenom"/>

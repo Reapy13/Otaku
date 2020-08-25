@@ -11,6 +11,8 @@ export class FansComponent implements OnInit {
 
     public filterOpen = false;
 
+    public formBtn: string = "+";
+
     public lastNameFilter: string = "";
     public firstNameFilter: string = "";
     public cityFilter: string = "";
@@ -84,6 +86,11 @@ export class FansComponent implements OnInit {
             && fan.prenom.toLowerCase().includes(this.firstNameFilter.toLowerCase())
             && fan.ville.toLowerCase().includes(this.cityFilter.toLowerCase())
             && fan.pays.toLowerCase().includes(this.countryFilter.toLowerCase());
+    }
+
+    openForm() {
+        this.fanAdding = !this.fanAdding;
+        this.formBtn = this.formBtn === "+" ? "-" : "+";
     }
 
     addFan() {
