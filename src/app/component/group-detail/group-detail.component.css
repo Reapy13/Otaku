@@ -1,6 +1,8 @@
 .cell {
+    background-color: lightgrey;
     margin: 2% 25%;
     border: solid 1px black;
+    border-radius: 8px;
     display: grid;
     justify-items: center;
 }

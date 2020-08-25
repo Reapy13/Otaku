@@ -14,7 +14,7 @@ export class ActivityService {
         this.load();
     }
 
-    // Initialize activityList with all the activities sorting by date, the last to the first
+    // Initialize activityList with all the activities sorting by date, from the last to the first
     public load() {
         this.httpClient.get<Array<Activity>>('http://localhost:3000/activities')
             .subscribe(resp => this.activityList = resp.sort((a,b) => {
